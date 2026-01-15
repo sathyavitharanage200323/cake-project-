@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SV Backers - Authentic Sri Lankan Bakery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body class="bg-[#FEFAE0] text-[#283618]">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-[#FEFAE0]/90 backdrop-blur-md border-b border-[#D4A373]/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-2 cursor-pointer">
+                    <div class="bg-[#BC6C25] p-2 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                        </svg>
+                    </div>
+                    <span class="text-2xl font-extrabold tracking-tight">SV BACKERS</span>
+                </div>
+                
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex space-x-8 font-semibold">
+                    <a href="#home" class="hover:text-[#BC6C25] transition-colors">Home</a>
+                    <a href="#cakes" class="hover:text-[#BC6C25] transition-colors">Cakes</a>
+                    <a href="#bakery" class="hover:text-[#BC6C25] transition-colors">Bakery</a>
+                    <a href="#contact" class="hover:text-[#BC6C25] transition-colors">Contact</a>
+                </div>
+
+                <!-- Mobile Button -->
+                <button id="menu-toggle" class="md:hidden p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Nav -->
+        <div id="mobile-nav" class="mobile-menu md:hidden bg-[#FEFAE0] border-b border-[#D4A373]/20 px-6 py-4 space-y-4">
+            <a href="#home" class="block text-lg font-medium">Home</a>
+            <a href="#cakes" class="block text-lg font-medium">Cakes</a>
+            <a href="#bakery" class="block text-lg font-medium">Bakery</a>
+            <a href="#contact" class="block text-lg font-medium">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 lg:pt-48 lg:pb-32 hero-gradient">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center">
+            <div class="lg:w-1/2 text-center lg:text-left">
+                <span class="px-4 py-1 rounded-full bg-[#D4A373]/20 text-[#BC6C25] font-bold text-sm mb-6 inline-block">THE TASTE OF CEYLON</span>
+                <h1 class="text-5xl lg:text-7xl font-extrabold mb-6 leading-tight">Baked Fresh, <br><span class="text-[#BC6C25]">Served Warm.</span></h1>
+                <p class="text-lg text-gray-600 mb-10 max-w-lg mx-auto lg:mx-0">Experience the authentic flavors of Sri Lankan wood-fired bread and artisanal cakes, crafted with recipes passed down through generations.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="#bakery" class="bg-[#BC6C25] text-white px-8 py-4 rounded-xl font-bold shadow-lg hover:shadow-xl transition-all inline-block">Explore Bakery</a>
+                    <a href="#contact" class="border-2 border-[#BC6C25] text-[#BC6C25] px-8 py-4 rounded-xl font-bold hover:bg-[#BC6C25] hover:text-white transition-all inline-block">Order Now</a>
+                </div>
+            </div>
+            <div class="lg:w-1/2 mt-16 lg:mt-0 relative">
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=800" alt="Sri Lankan Bakery" class="rounded-3xl shadow-2xl rotate-2 hover:rotate-0 transition-all duration-500 w-full h-[400px] lg:h-[500px] object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Cakes Section -->
+    <section id="cakes" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-4xl font-extrabold mb-4">Celebration Cakes</h2>
+                    <p class="text-gray-500 text-lg">Premium custom cakes for your most special days.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Cake 1 -->
+                <div class="group bg-[#FEFAE0] rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover group-hover:scale-110 transition-duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-1">Classic Ribbon</h3>
+                        <p class="text-[#BC6C25] font-bold">Rs. 2,500</p>
+                    </div>
+                </div>
+                <!-- Cake 2 -->
+                <div class="group bg-[#FEFAE0] rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover group-hover:scale-110 transition-duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-1">Fruit Gateau</h3>
+                        <p class="text-[#BC6C25] font-bold">Rs. 3,200</p>
+                    </div>
+                </div>
+                <!-- Cake 3 -->
+                <div class="group bg-[#FEFAE0] rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1562777717-dc6984f65a63?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover group-hover:scale-110 transition-duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-1">Chocolate Layer</h3>
+                        <p class="text-[#BC6C25] font-bold">Rs. 2,800</p>
+                    </div>
+                </div>
+                <!-- Cake 4 -->
+                <div class="group bg-[#FEFAE0] rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://img.sanishtech.com/u/495bb63bb2b8d06a3e92eb5dbec93f8e.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-1">Wedding Tiers</h3>
+                        <p class="text-[#BC6C25] font-bold">Custom Quote</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bakery Section -->
+    <section id="bakery" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-extrabold mb-12">The Bakery Menu</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Item -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-[#D4A373]/20 text-left hover:border-[#BC6C25] transition-all">
+                    <div class="flex justify-between">
+                        <h3 class="font-bold text-lg">Traditional Kade Paan</h3>
+                        <span class="text-[#BC6C25] font-bold">Rs. 180</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-2">Authentic wood-fired crusty bread.</p>
+                </div>
+                <!-- Item -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-[#D4A373]/20 text-left hover:border-[#BC6C25] transition-all">
+                    <div class="flex justify-between">
+                        <h3 class="font-bold text-lg">Spicy Fish Buns</h3>
+                        <span class="text-[#BC6C25] font-bold">Rs. 120</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-2">The classic Sri Lankan Malu Paan.</p>
+                </div>
+                <!-- Item -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-[#D4A373]/20 text-left hover:border-[#BC6C25] transition-all">
+                    <div class="flex justify-between">
+                        <h3 class="font-bold text-lg">Seeni Sambal Buns</h3>
+                        <span class="text-[#BC6C25] font-bold">Rs. 110</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-2">Caramelized onions and spices.</p>
+                </div>
+                <!-- Item -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-[#D4A373]/20 text-left hover:border-[#BC6C25] transition-all">
+                    <div class="flex justify-between">
+                        <h3 class="font-bold text-lg">Mutton Rolls</h3>
+                        <span class="text-[#BC6C25] font-bold">Rs. 160</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-2">Crispy crumb-fried spicy mutton.</p>
+                </div>
+                <!-- Item -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-[#D4A373]/20 text-left hover:border-[#BC6C25] transition-all">
+                    <div class="flex justify-between">
+                        <h3 class="font-bold text-lg">Egg Roti</h3>
+                        <span class="text-[#BC6C25] font-bold">Rs. 150</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-2">Freshly made local short-eat.</p>
+                </div>
+                <!-- Item -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-[#D4A373]/20 text-left hover:border-[#BC6C25] transition-all">
+                    <div class="flex justify-between">
+                        <h3 class="font-bold text-lg">Butter Levers</h3>
+                        <span class="text-[#BC6C25] font-bold">Rs. 90</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-2">Perfect companion for Ceylon tea.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Email Section -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-[#283618] rounded-[3rem] p-8 md:p-16 flex flex-col lg:flex-row gap-16 text-white relative overflow-hidden">
+                <div class="lg:w-1/2">
+                    <h2 class="text-4xl font-extrabold mb-8">Visit Our Bakery</h2>
+                    <div class="space-y-6">

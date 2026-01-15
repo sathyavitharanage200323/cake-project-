@@ -1,0 +1,51 @@
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at top right, rgba(212, 163, 115, 0.15), transparent);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px border rgba(255, 255, 255, 0.1);
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            transition: all 0.3s ease;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+        .whatsapp-text {
+            font-size: 14px;
+            font-weight: bold;
+            max-width: 0;
+            overflow: hidden;
+            transition: max-width 0.5s ease;
+            white-space: nowrap;
+            margin-left: 0;
+        }
+        .whatsapp-float:hover .whatsapp-text {
+            max-width: 200px;
+            margin-left: 10px;
+        }
+        .mobile-menu {
+            display: none;
+        }
+        .mobile-menu.active {
+            display: block;
+        }
